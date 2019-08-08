@@ -27,7 +27,7 @@ class GreetingController {
     @GetMapping
     Object greet(@RequestParam(defaultValue = "World") String name) {
         Map<Object, Object> map = new HashMap<>();
-        map.put("greeting", "Huhu " + name);
+        map.put("greeting", "Hola " + name);
         map.put("timestamp", Instant.now());
         return map;
     }
